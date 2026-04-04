@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+.btn {
+  background: linear-gradient(45deg, #ff0055, #ff7a00);
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.hero-img img {
+  width: 300px;
+  filter: drop-shadow(0 0 20px rgba(255,0,100,0.5));
+}
+
+/* BENEFÍCIOS */
+.benefits {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* COPY */
+.copy {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.copy ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+/* PROVA */
+.proof {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.test {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.guarantee {
+  margin-top: 20px;
+  color: #0f0;
+}
+
+/* VIDEO */
+.video {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* CTA */
+.cta {
+  padding: 60px 20px;
+  background: linear-gradient(45deg, #ff0055, #ff7a00);
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 20px;
+  }
+}
